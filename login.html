@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <header></header>
     <main>
-        <div class="flex justify-center items-center flex-col w-full h-dvh">
-            <div class="m-6">
-                <p class="text-5xl m-6">Log-in</p>
-                <p class="text-2xl m-6">Username</p>
-                <input type="email" name="" id="" placeholder="E-mail">
-                <p class="text-2xl m-6">Password</p>
-                <input type="email" name="" id="" placeholder="Password">
-            </div>
-            <div class="flex justify-center  text-left gap-6">
-                <a href="">
+        <div class="max-w-2xl mx-auto my-50 ">
+            <form action="#" class="gap-4 ">
+                <p class="text-3xl my-5">Log in</p>
                 <div>
-                    <p>Log-in</p>
-                </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p>Sing-in</p>
+                    <div class="flex flex-col gap-2 text-lg">
+                        <label class="text-gray-600 font-bold inline-block pb-2" for="e-mail">E-mail</label>
+                        <input
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+                            type="email" name="email" placeholder="Exmaple@gmail.com" required>
                     </div>
-                </a>
-            </div>
+                    <div class="flex flex-col text-lg my-4">
+                        <label class="text-gray-600 font-bold inline-block pb-2" for="password">password</label>
+                        <input
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+                            type="password" name="password" required>
+                    </div>
+                    <div class="flex my-6 ">
+                        <div class=" w-1/2">
+                            <input type="checkbox" name="remeberme" id="remeberme">
+                            <label for="reberMe">Remeber me</label>
+                        </div>
+                        <div class="w-1/2 text-right">
+                            <a href="">Forgot password</a>
+                        </div>
+                    </div>
+                    <div>
+                        <input
+                            class="my-4 bg-slate-500 w-full py-2 rounded-md text-white font-bold cursor-pointer hover:bg-yellow-950"
+                            type="submit" value="Login">
+                    </div>
+                    <div>
+                        <input
+                            class="bg-slate-500 w-full py-2 rounded-md text-white font-bold cursor-pointer hover:bg-yellow-950 my-04 border-solid border-yellow-400"
+                            type="submit" value="Google">
+                    </div>
+                    <div>
+                        <input
+                            class="bg-slate-500 w-full py-2 rounded-md text-white font-bold cursor-pointer hover:bg-yellow-950 my-4"
+                            type="submit" value="facebook">
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
     <footer></footer>
 </body>
+
 </html>
