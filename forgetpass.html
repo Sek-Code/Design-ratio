@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลืมรหัสผ่าน | Forgot Password</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* --- CSS Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f0f2f5; /* สีพื้นหลังโทนเทาอ่อน */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* เงาให้ดูลอยเด่น */
+            text-align: center;
+        }
+
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        p.description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 14px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Kanit', sans-serif;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            outline: none;
+        }
+
+        input[type="email"]:focus {
+            border-color: #1a73e8; /* สีเส้นขอบเมื่อคลิกพิมพ์ */
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a73e8; /* สีปุ่มหลัก */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Kanit', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #1557b0;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: block;
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #1a73e8;
+        }
+
+        .back-link i {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="icon-circle">
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <h2>ลืมรหัสผ่าน?</h2>
+            <p class="description">
+                ไม่ต้องกังวล! เพียงกรอกอีเมลที่ผูกกับบัญชีของคุณ<br>
+                เราจะส่งลิงก์สำหรับตั้งรหัสผ่านใหม่ไปให้
+            </p>
+
+            <form action="#" method="POST"> <div class="form-group">
+                    <label for="email">อีเมลของคุณ</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <button type="submit" class="btn-submit">ส่งลิงก์รีเซ็ตรหัสผ่าน</button>
+            </form>
+
+            <a href="login.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> กลับไปหน้าเข้าสู่ระบบ
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
