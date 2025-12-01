@@ -25,11 +25,6 @@
   <body class="font-['Montserrat']">
     <!-- NAVBAR -->
     <nav class="fixed inset-x-0 top-0 z-50 bg-white border-b">
-      <!--
-        base (mobile):  px-4 / py-3
-        md ขึ้นไป:      px-[150px] / py-[40px]
-        => โลโก้ห่างขอบซ้าย 150px, เมนูสุดท้ายห่างขอบขวา 150px
-      -->
       <div
         class="flex items-center justify-between px-4 py-3 md:px-[150px] md:py-[40px]"
       >
@@ -44,7 +39,6 @@
 
         <!-- MENU + ICON -->
         <div class="flex items-center gap-4">
-          <!-- Home icon (มือถือก็ยังเห็นได้) -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -61,8 +55,6 @@
           </svg>
 
           <!-- MENU TEXT -->
-          <!-- base (mobile): gap-4, ตัวเล็กลง
-               md ขึ้นไป: gap-[35px] ตาม requirement -->
           <div
             class="flex flex-row items-center gap-4 md:gap-[35px] h-7"
           >
@@ -87,7 +79,7 @@
     </nav>
 
     <!-- MAIN -->
-    <!-- เผื่อที่ให้ navbar (เพราะ fixed) -->
+    <!-- เผื่อที่ให้ navbar เพราะเป็นแบบ fixed -->
     <main class="pt-[96px] md:pt-[130px]">
       <section class="w-full px-4 py-10">
         <h1 class="text-[32px] md:text-[48px] font-semibold font-['Playfair_Display']">
