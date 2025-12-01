@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="max-w-2xl mx-auto my-50 ">
+            <form action="#" class="gap-4 ">
+                <p class="text-6xl my-7 text-center">Log in</p>
+                <div>
+                    <div class="flex flex-col gap-2 text-lg">
+                        <label class="text-gray-600 font-bold inline-block pb-2" for="e-mail">E-mail</label>
+                        <input
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+                            type="email" name="email" placeholder="Exmaple@gmail.com" required>
+                    </div>
+                    <div class="flex flex-col text-lg my-4">
+                        <label class="text-gray-600 font-bold inline-block pb-2" for="password">Password</label>
+                        <input
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+                            type="password" name="password" required>
+                    </div>
+                    <div class="flex my-6 ">
+                        <div class=" w-1/2">
+                            <input type="checkbox" name="remeberme" id="remeberme">
+                            <label for="reberMe">Remeber me</label>
+                        </div>
+                        <div class="w-1/2 text-right">
+                            <a href="">Forgot password</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <input
+                            class="my-4 bg-[#989898] w-32 py-2 rounded-3xl text-white font-bold cursor-pointer hover:bg-yellow-950"
+                            type="submit" value="Login">
+                        <input
+                            class="my-4 bg-[#411D03] w-32 py-2 rounded-3xl text-white font-bold cursor-pointer hover:bg-yellow-950"
+                            type="submit" value="Sign Up">
+                    </div>
+                    <div>
+                        <input
+                            class="bg-white w-full py-2 rounded-md text-[#411D03] font-bold cursor-pointer  my-4 border-solid border-[#411D03] border-2"
+                            type="submit" value="Log In with Google">
+                    </div>
+                    <div>
+                        <input
+                            class="bg-[#411D03] w-full py-2 rounded-md text-white font-bold cursor-pointer  my-04 border-solid "
+                            type="submit" value="Log In with Facebook">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
