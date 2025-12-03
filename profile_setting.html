@@ -3,11 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <!-- Tailwind via CDN -->
+    <title>Profile Setting</title>
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <div class="max-w-2xl mx-auto py-12">
+
+      <h2 class="text-5xl font-semibold mb-8">Profile</h2>
+
+  <div class="relative w-32 mx-auto">
+    <img src="img/kindpng_223965.png" class="w-full rounded-full border" alt="">
+    <button class="absolute bottom-1 right-1 bg-white border p-1 rounded-full shadow">📷</button>
+  </div>
+
+  <form class="mt-10 space-y-6">
+
     
+    <div class="grid grid-cols-1 grid-cols-2 gap-6">
+      <div>
+        <label class="text-sm">First Name</label>
+        <input type="text" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
+      </div>
+
+      <div>
+        <label class="text-sm">Last Name</label>
+        <input type="text" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
+      </div>
+    </div>
+
+    <div>
+      <label class="text-sm">Email</label>
+      <input type="email" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
+    </div>
+
+    <div>
+      <label class="text-sm">Mobile Number</label>
+      <input type="tel" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
+    </div>
+
+    <div>
+      <label class="text-sm">Address</label>
+      <textarea type="address" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]"></textarea>
+    </div>
+
+   
+    <div class="flex gap-4 justify-center pt-4">
+      <button class="px-6 py-2 bg-[#F2EDE4] rounded-md">Save change</button>
+      <button class="px-6 py-2 border rounded-md">Edit</button>
+    </div>
+
+  </form>
+</div>
+    <footer>
+      <div class="w-full h-auto bg-[#F3ECE3] flex justify-around items-center">
+
+        <div>
+          <img src="" alt="LOGO">
+        </div>
+
+        <div>
+          <ul class="flex gap-8">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>Blending</li>
+            </a>
+            <a href="#">
+              <li>Product</li>
+            </a>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <p>Contact Us</p>
+          </div>
+          <div>
+            <p>Address</p>
+            <p>Call</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
