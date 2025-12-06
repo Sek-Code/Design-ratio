@@ -5,10 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Ratio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+			rel="stylesheet"
+			href="style.css"
+		/>
+    <style>
+        @theme {
+            --cream-color: #f3ece3;
+            --matcha-color: #9e9957;
+            --brown-color: #411D03;
+            --gray-color: #989898;
+            --h1-font: "Playfair Display";
+            --h1-size: 48px;
+            --h1-weight: 600;
+            --h2-font: "Montserrat";
+            --h2-size: 32px;
+            --h2-weight: 600;
+            --h3-font: "Montserrat";
+            --h3-size: 22px;
+            --h3-weight: 600;
+            --button-font: "Montserrat";
+            --button-size: 14px;
+            --button-weight: 500;
+            --p-font: "Montserrat";
+            --p-size: 16px;
+            --p-weight: 400;
+            --nav-font: "Playfair Display";
+            --nav-size: 16px;
+            --nav-weight: 700;
+        }
+    </style>
+    <style type="text/tailwindcss">
+  @layer utilities {
+    .h1-style {
+      font-family: var(--h1-font);
+      font-size: var(--h1-size);
+      font-weight: var(--h1-weight);
+    }
+
+    .h2-style {
+      font-family: var(--h2-font);
+      font-size: var(--h2-size);
+      font-weight: var(--h2-weight);
+    }
+
+    .h3-style {
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-weight: var(--h3-weight);
+    }
+
+    .button-style {
+      font-family: var(--button-font);
+      font-size: var(--button-size);
+      font-weight: var(--button-weight);
+    }
+
+    .p-style {
+      font-family: var(--p-font);
+      font-size: var(--p-size);
+      font-weight: var(--p-weight);
+    }
+
+    .nav-style {
+      font-family: var(--nav-font);
+      font-size: var(--nav-size);
+      font-weight: var(--nav-weight);
+    }
+  }
+</style>
 </head>
   <body>
-        <header>
-        <nav class="w-full h-16 bg-yellow-600">
+        <header class="mx-40 bg-white flex justify-start items-center h-25">
+        <nav>
             <ul class="flex justify-between items-center md:hidden">
                 <li></li>
                 <li></li>
@@ -17,11 +88,13 @@
                 <li></li>
                 <li></li>
             </ul>
-            <div class="flex justify-between items-center h-full mx-8 md:flex">
-                <a href="">
-                    <img src="" alt="LOGO">
-                </a>
-                <ul class="flex gap-8 ">
+            <div class="flex justify-between items-center h-full md:flex">
+                <div class="w-2/15 h-1/40 mt-5">
+                  <a href="">
+                    <img src="/img/Design-Ratio-logo.png" alt="LOGO" />
+                  </a>
+                </div>
+                <ul class="flex gap-8 ml-96">
                     <a href="#">
                         <li>HOME</li>
                     </a>
@@ -44,18 +117,69 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="flex justify-start items-start mx-40 my-20">
         <div><img src="#" /></div>
-        <div>
-            <h1>Reset Your Password</h1>
-            <form action="#" method="POST">
-                <label for="email">Username</label>
-                <input type="email" id="email" name="email" required>
-                <!-- <label for="new password">New Password</label>
-                <input type="password" id="password" name="new password" required>
-                <label for="confirm password">Confirm Password</label>
-                <input type="password" id="password" name="confirm password" required> -->
-                <button type="submit">Send Reset Link</button>
+        <div class="flex flex-col justify-center items-center ml-20 p-10 rounded-3xl bg-[#fffbf7] w-full">
+            <div><h1 class="h1-style text-[var(--brown-color)] mb-10">Reset Password</h1></div>
+            <div class="w-full"><form action="#" method="POST">
+                <div class="h3-style mb-10 text-[var(--brown-color)] mx-20">
+                    <label for="email">Username</label>
+                    <div class="mt-5"><input type="email" id="email" name="email" required class="w-full"></div>
+                    <hr>
+                </div>
+                <div class="h3-style mb-10 text-[var(--brown-color)] mx-20">
+                    <label for="new password">New Password</label>
+                    <div class="mt-5"><input type="password" id="password" name="new password" required class="w-full"></div>
+                    <hr>
+                </div>
+                <div class="h3-style mb-10 text-[var(--brown-color)] mx-20">
+                    <label for="confirm password">Confirm Password</label>
+                    <div class="mt-5"><input type="password" id="password" name="confirm password" required class="w-full"></div>
+                    <hr>
+                </div>
+                <div class="w-full flex justify-center mt-15 mb-4"><button type="submit" class="bg-[var(--brown-color)] text-white button-style w-1/8 py-2 rounded-3xl mx-20">Reset</button></div>
             </form>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="w-full h-auto bg-[#F3ECE3] flex justify-around items-center">
+            <div>
+                <img src="" alt="LOGO">
+            </div>
+            <div>
+                <ul class="flex gap-8">
+                    <a href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li>Blending</li>
+                    </a>
+                    <a href="#">
+                        <li>Product</li>
+                    </a>
+                    <a href="#">
+                        <li>Profile</li>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <p>Contact Us</p>
+                </div>
+                <div>
+                    <p>Address</p>
+                    <p>Call</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+               <!---------------card pd--------------->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
