@@ -4,35 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Design Ratio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @theme {
+            --cream-color: #f3ece3;
+            --matcha-color: #9e9957;
+            --brown-color: #411D03;
+            --gray-color: #989898;
+            --h1-font: "Playfair Display";
+            --h1-size: 48px;
+            --h1-weight: 600;
+            --h2-font: "Montserrat";
+            --h2-size: 32px;
+            --h2-weight: 600;
+            --h3-font: "Montserrat";
+            --h3-size: 22px;
+            --h3-weight: 600;
+            --button-font: "Montserrat";
+            --button-size: 14px;
+            --button-weight: 500;
+            --p-font: "Montserrat";
+            --p-size: 16px;
+            --p-weight: 400;
+            --nav-font: "Playfair Display";
+            --nav-size: 16px;
+            --nav-weight: 700;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .h1-style {
+            font-family: var(--h1-font);
+            font-size: var(--h1-size);
+            font-weight: var(--h1-weight);
+            }
+
+            .h2-style {
+            font-family: var(--h2-font);
+            font-size: var(--h2-size);
+            font-weight: var(--h2-weight);
+            }
+
+            .h3-style {
+            font-family: var(--h3-font);
+            font-size: var(--h3-size);
+            font-weight: var(--h3-weight);
+            }
+
+            .button-style {
+            font-family: var(--button-font);
+            font-size: var(--button-size);
+            font-weight: var(--button-weight);
+            }
+
+            .p-style {
+            font-family: var(--p-font);
+            font-size: var(--p-size);
+            font-weight: var(--p-weight);
+            }
+
+            .nav-style {
+            font-family: var(--nav-font);
+            font-size: var(--nav-size);
+            font-weight: var(--nav-weight);
+            }
+
+            .placeholder-h3-style {
+            font-family: var(--h3-font);
+            font-size: var(--h3-size);
+            font-weight: var(--h3-weight);
+            }
+            
+        }
+    </style>
 </head>
 
 <body>
-    <header></header>
+    <header class="mx-40 bg-white flex justify-start items-center h-25">
+        <nav>
+            <ul class="flex justify-between items-center md:hidden">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="flex justify-between items-center h-full md:flex">
+                <div class="w-2/15 h-1/40 mt-5">
+                  <a href="">
+                    <img src="/img/Design-Ratio-logo.png" alt="LOGO" />
+                  </a>
+                </div>
+                <ul class="flex gap-8 ml-96">
+                    <a href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li>Blending</li>
+                    </a>
+                    <a href="#">
+                        <li>Product</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Profile</li>
+                    </a>
+                    <a href="#">
+                        <li>OrderSummery</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <div class="max-w-2xl mx-auto my-50 ">
+        <div class="max-w-xl mx-auto my-50 ">
             <form action="#" class="gap-4 ">
-                <p class="text-6xl my-7 text-center">Log in</p>
+                <p class="text-6xl my-7 text-center h1-style">Log-in</p>
                 <div>
                     <div class="flex flex-col gap-2 text-lg">
-                        <label class="text-gray-600 font-bold inline-block pb-2" for="e-mail">E-mail</label>
+                        <label class="text-gray-600 font-bold inline-block pb-2 h3-style" for="e-mail">E-mail</label>
                         <input
-                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2 placeholder-h3-style"
                             type="email" name="email" placeholder="Exmaple@gmail.com" required>
                     </div>
                     <div class="flex flex-col text-lg my-4">
-                        <label class="text-gray-600 font-bold inline-block pb-2" for="password">Password</label>
+                        <label class="text-gray-600 font-bold inline-block pb-2 h3-style" for="password">Password</label>
                         <input
                             class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
                             type="password" name="password" required>
                     </div>
                     <div class="flex my-6 ">
                         <div class=" w-1/2">
-                            <input type="checkbox" name="remeberme" id="remeberme">
+                            <input type="checkbox" name="remeberme" id="remeberme ">
                             <label for="reberMe">Remeber me</label>
                         </div>
-                        <div class="w-1/2 text-right">
+                        <div class="w-1/2 text-right ">
                             <a href="">Forgot password</a>
                         </div>
                     </div>
