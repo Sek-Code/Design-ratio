@@ -4,59 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Setting</title>
-    
+<!--Tailwind-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<!--CSS-->
+    <link rel="stylesheet" href="style.css">
+<!--FontStyle--->
+    <style>
+      @theme {
+        --cream-color: #f3ece3;
+        --matcha-color: #9e9957;
+        --brown-color: #411D03;
+        --gray-color: #989898;
+        --h1-font: "Playfair Display";
+        --h1-size: 48px;
+        --h1-weight: 600;
+        --h2-font: "Montserrat";
+        --h2-size: 32px;
+        --h2-weight: 600;
+        --h3-font: "Montserrat";
+        --h3-size: 22px;
+        --h3-weight: 600;
+        --button-font: "Montserrat";
+        --button-size: 14px;
+        --button-weight: 500;
+        --p-font: "Montserrat";
+        --p-size: 16px;
+        --p-weight: 400;
+        --nav-font: "Playfair Display";
+        --nav-size: 16px;
+        --nav-weight: 700;
+      }
+    </style>
+     <style type="text/tailwindcss">
+        @layer utilities {
+            .h1-style {
+                font-family: var(--h1-font);
+                font-size: var(--h1-size);
+                font-weight: var(--h1-weight);
+            }
+            .h2-style {
+                font-family: var(--h2-font);
+                font-size: var(--h2-size);
+                font-weight: var(--h2-weight);
+            }
+            .h3-style {
+                font-family: var(--h3-font);
+                font-size: var(--h3-size);
+                font-weight: var(--h3-weight);
+            }
+            .button-style {
+                font-family: var(--button-font);
+                font-size: var(--button-size);
+                font-weight: var(--button-weight);
+            }
+            .p-style {
+                font-family: var(--p-font);
+                font-size: var(--p-size);
+                font-weight: var(--p-weight);
+            }
+            .nav-style {
+                font-family: var(--nav-font);
+                font-size: var(--nav-size);
+                font-weight: var(--nav-weight);
+            }
+            .placeholder-h3-style {
+                font-family: var(--h3-font);
+                font-size: var(--h3-size);
+                font-weight: var(--h3-weight);
+            }
+        }
+    </style>
+<!--Profile_Page--->
 </head>
 <body>
-    <div class="max-w-2xl mx-auto py-12">
-
-      <h2 class="text-5xl font-semibold mb-8">Profile</h2>
-
-  <div class="relative w-32 mx-auto">
+  <header class="mx-40 bg-white flex justify-start items-center h-25">
+    <nav>
+      <ul class="flex justify-between items-center md:hidden">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="flex justify-between items-center h-full md:flex">
+        <div class="w-2/15 h-1/40 mt-5">
+          <a href="">
+            <img src="/img/Design-Ratio-logo.png" alt="LOGO" />
+          </a>
+        </div>
+        <ul class="flex gap-8 ml-96">
+          <a href="#">
+            <li>HOME</li>
+          </a>
+          <a href="#">
+            <li>Blending</li>
+          </a>
+          <a href="#">
+            <li>Product</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <a href="#">
+            <li>Profile</li>
+          </a>
+          <a href="#">
+            <li>OrderSummery</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="max-w-2xl mx-auto py-12">
+    <h1 class="h1-style font-semibold mb-8">Profile</h1>
+    <div class="relative w-32 mx-auto">
     <img src="img/kindpng_223965.png" class="w-full rounded-full border" alt="">
     <button class="absolute bottom-1 right-1 bg-white border p-1 rounded-full shadow">📷</button>
   </div>
 
   <form class="mt-10 space-y-6">
 
-    
     <div class="grid grid-cols-1 grid-cols-2 gap-6">
       <div>
-        <label class="text-sm">First Name</label>
+        <label class="h3-style text-sm">First Name:</label>
         <input type="text" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
       </div>
 
       <div>
-        <label class="text-sm">Last Name</label>
+        <label class="h3-style text-sm">Last Name:</label>
         <input type="text" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
       </div>
     </div>
 
     <div>
-      <label class="text-sm">Email</label>
+      <label class="h3-style text-sm">Email:</label>
       <input type="email" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
     </div>
 
     <div>
-      <label class="text-sm">Mobile Number</label>
+      <label class="h3-style text-sm">Mobile Number:</label>
       <input type="tel" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]" />
     </div>
 
     <div>
-      <label class="text-sm">Address</label>
+      <label class="h3-style text-sm">Address:</label>
       <textarea type="address" class="w-full mt-1 p-2 rounded-md bg-[#F2EDE4]"></textarea>
     </div>
 
-   
     <div class="flex gap-4 justify-center pt-4">
-      <button class="px-6 py-2 bg-[#F2EDE4] rounded-md">Save change</button>
-      <button class="px-6 py-2 border rounded-md">Edit</button>
+      <button class="button-style hover:bg-amber-800 hover:text-white px-12 py-2 bg-[#d8d8d8] rounded-2xl">Save change</button>
     </div>
 
   </form>
 </div>
     <footer>
-      <div class="w-full h-auto bg-[#F3ECE3] flex justify-around items-center">
+      <div class="p-style hw-full h-auto bg-[#F3ECE3] flex justify-around items-center">
 
         <div>
           <img src="" alt="LOGO">
