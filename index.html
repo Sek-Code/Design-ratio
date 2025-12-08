@@ -6,6 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Ratio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+			rel="stylesheet"
+			href="style.css"
+		/>
+
+    <style>
+        @theme {
+            --cream-color: #f3ece3;
+            --matcha-color: #9e9957;
+            --brown-color: #411D03;
+            --gray-color: #989898;
+            --h1-font: "Playfair Display";
+            --h1-size: 48px;
+            --h1-weight: 600;
+            --h2-font: "Montserrat";
+            --h2-size: 32px;
+            --h2-weight: 600;
+            --h3-font: "Montserrat";
+            --h3-size: 22px;
+            --h3-weight: 600;
+            --button-font: "Montserrat";
+            --button-size: 14px;
+            --button-weight: 500;
+            --p-font: "Montserrat";
+            --p-size: 16px;
+            --p-weight: 400;
+            --nav-font: "Playfair Display";
+            --nav-size: 16px;
+            --nav-weight: 700;
+        }
+    </style>
+    <style type="text/tailwindcss">
+  @layer utilities {
+    .h1-style {
+      font-family: var(--h1-font);
+      font-size: var(--h1-size);
+      font-weight: var(--h1-weight);
+    }
+
+    .h2-style {
+      font-family: var(--h2-font);
+      font-size: var(--h2-size);
+      font-weight: var(--h2-weight);
+    }
+
+    .h3-style {
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-weight: var(--h3-weight);
+    }
+
+    .button-style {
+      font-family: var(--button-font);
+      font-size: var(--button-size);
+      font-weight: var(--button-weight);
+    }
+
+    .p-style {
+      font-family: var(--p-font);
+      font-size: var(--p-size);
+      font-weight: var(--p-weight);
+    }
+
+    .nav-style {
+      font-family: var(--nav-font);
+      font-size: var(--nav-size);
+      font-weight: var(--nav-weight);
+    }
+  }
+</style>
+
 </head>
 
 <body>
@@ -50,7 +125,7 @@
         <!-- img slider by ice -->
         <div class="max-w-full mx-auto">
             <div id="defult-carousel" class="relative" data-carousel="static">
-                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96 ">
+                <div class="overflow-hidden relative rounded-lg w-full aspect-[45/9] h-1/2">
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
                         <img class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
@@ -87,102 +162,129 @@
             </div>
             <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
         </div>
-        <!--our product by game-->
-        <section id="Our_product" class="flex flex-col items-center">
-            <h1>Our Products</h1>
-            <div class="grid grid-cols-3  gap-x-8 gap-y-5">
-                <div class="flex flex-col items-center">
-                    <img src="/img/tea.jpg" class="w-60 h-60">
-                    <h3>Tea</h3>
-                    <p>Size S │ Size L</p>
-                    <div class="flex flex-row">
-                        <button>
-                            <p>-</p>
-                        </button>
-                        <h3>1</h3>
-                        <button>
-                            <p>+</p>
-                        </button>
+        <!-- about us by Mae-->
+        <section>
+            <div class="flex flex-col items-center my-20 mx-40">
+                <h1 class="h1-style text-[#9e9957] mb-8">About Us</h1>
+                <div class="flex justify-start items-center h-[400px]">
+                    <div class="w-1/2 h-2/3 mr-16 flex justify-center items-center">
+                        <img src="/img/Rectangle 12 (1).png" alt="about us img" class="mb-10 rounded-tl-[35%] rounded-br-[35%] shadow-lg flex justify-center items-center">
                     </div>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/img/tea.jpg" class="w-60 h-60">
-                    <h3>Tea</h3>
-                    <p>Size S │ Size L</p>
-                    <div class="flex flex-row">
-                        <button>
-                            <p>-</p>
-                        </button>
-                        <h3>1</h3>
-                        <button>
-                            <p>+</p>
-                        </button>
+                    <div class="w-1/2 h-screen flex flex-col justify-center items-center">
+                        <p class="p-style text-left text-[#411D03]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="mt-11 mb-4 w-40 h-9">
+                        <button class="button-style bg-[#411D03] text-[#f3ece3] rounded-3xl px-10 py-2">See more</button>
                     </div>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/img/tea.jpg" class="w-60 h-60">
-                    <h3>Tea</h3>
-                    <p>Size S │ Size L</p>
-                    <div class="flex flex-row">
-                        <button>
-                            <p>-</p>
-                        </button>
-                        <h3>1</h3>
-                        <button>
-                            <p>+</p>
-                        </button>
                     </div>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/img/tea.jpg" class="w-60 h-60">
-                    <h3>Tea</h3>
-                    <p>Size S │ Size L</p>
-                    <div class="flex flex-row">
-                        <button>
-                            <p>-</p>
-                        </button>
-                        <h3>1</h3>
-                        <button>
-                            <p>+</p>
-                        </button>
-                    </div>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/img/tea.jpg" class="w-60 h-60">
-                    <h3>Tea</h3>
-                    <p>Size S │ Size L</p>
-                    <div class="flex flex-row">
-                        <button>
-                            <p>-</p>
-                        </button>
-                        <h3>1</h3>
-                        <button>
-                            <p>+</p>
-                        </button>
-                    </div>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/img/tea.jpg" class="w-60 h-60">
-                    <h3>Tea</h3>
-                    <p>Size S │ Size L</p>
-                    <div class="flex flex-row">
-                        <button>
-                            <p>-</p>
-                        </button>
-                        <h3>1</h3>
-                        <button>
-                            <p>+</p>
-                        </button>
-                    </div>
-                    <button>Add to Cart</button>
                 </div>
             </div>
-            <button>See more ></button>
+        </section>
+        <!--custom blend by Mae-->
+        <section class="bg-[#411D03]">
+            <div class="flex flex-col justify-center items-center my-20 mx-40">
+                <h1 class="h1-style text-[#FFF] my-10">Blend It Yourself !</h1>
+                <p class="p-style text-[#FFF]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo fugit nobis rerum laborum beatae incidunt cupiditate facilis. Distinctio doloremque nostrum est, blanditiis commodi esse quam voluptatibus. Ullam, molestiae ratione quisquam officia aliquam rerum accusantium exercitationem eum iste voluptates quo iusto dolor necessitatibus? Earum laboriosam quis quaerat esse, voluptas dignissimos.</p>
+                <div class="mt-11 mb-32 w-52 h-9">
+                    <button class="button-style bg-[#9e9957] text-[#f3ece3] rounded-3xl px-10 py-2">Make Yours Now</button>
+                </div>
+            </div>
+        </section>
+        <!--our product by game-->
+        <section id="Our_product" class="flex flex-col items-center">
+            <h1 class="h1-style py-12 text-[#9e9957]">Our Products</h1>
+            <div class="grid grid-cols-3  gap-x-8 gap-y-5">
+                <div class="flex flex-col items-center w-64 h-114 ">
+                    <img src="/img/tea.jpg" class="w-60 h-60 rounded-tl-[35%] rounded-br-[35%] shadow-lg">
+                    <h3 class="h3-style pt-5 pb-4 text-[#411D03]">Tea</h3>
+                    <p class="p-style text-[#411D03] pb-5">Size S │ Size L</p>
+                    <div class="flex flex-row gap-5 h3-style text-[#411D03] pb-5">
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>-</p>
+                        </button>
+                        <p>0</p>
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>+</p>
+                        </button>
+                    </div>
+                    <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl">Add to Cart</button>
+                </div>
+                <div class="flex flex-col items-center w-64 h-114 ">
+                    <img src="/img/tea.jpg" class="w-60 h-60 rounded-tl-[35%] rounded-br-[35%] shadow-lg">
+                    <h3 class="h3-style pt-5 pb-4 text-[#411D03]">Tea</h3>
+                    <p class="p-style text-[#411D03] pb-5">Size S │ Size L</p>
+                    <div class="flex flex-row gap-5 h3-style text-[#411D03] pb-5">
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>-</p>
+                        </button>
+                        <p>0</p>
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>+</p>
+                        </button>
+                    </div>
+                    <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl">Add to Cart</button>
+                </div>
+                <div class="flex flex-col items-center w-64 h-114 ">
+                    <img src="/img/tea.jpg" class="w-60 h-60 rounded-tl-[35%] rounded-br-[35%] shadow-lg">
+                    <h3 class="h3-style pt-5 pb-4 text-[#411D03]">Tea</h3>
+                    <p class="p-style text-[#411D03] pb-5">Size S │ Size L</p>
+                    <div class="flex flex-row gap-5 h3-style text-[#411D03] pb-5">
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>-</p>
+                        </button>
+                        <p>0</p>
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>+</p>
+                        </button>
+                    </div>
+                    <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl">Add to Cart</button>
+                </div>
+                <div class="flex flex-col items-center w-64 h-114 ">
+                    <img src="/img/tea.jpg" class="w-60 h-60 rounded-tl-[35%] rounded-br-[35%] shadow-lg">
+                    <h3 class="h3-style pt-5 pb-4 text-[#411D03]">Tea</h3>
+                    <p class="p-style text-[#411D03] pb-5">Size S │ Size L</p>
+                    <div class="flex flex-row gap-5 h3-style text-[#411D03] pb-5">
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>-</p>
+                        </button>
+                        <p>0</p>
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>+</p>
+                        </button>
+                    </div>
+                    <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl">Add to Cart</button>
+                </div>
+                <div class="flex flex-col items-center w-64 h-114 ">
+                    <img src="/img/tea.jpg" class="w-60 h-60 rounded-tl-[35%] rounded-br-[35%] shadow-lg">
+                    <h3 class="h3-style pt-5 pb-4 text-[#411D03]">Tea</h3>
+                    <p class="p-style text-[#411D03] pb-5">Size S │ Size L</p>
+                    <div class="flex flex-row gap-5 h3-style text-[#411D03] pb-5">
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>-</p>
+                        </button>
+                        <p>0</p>
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>+</p>
+                        </button>
+                    </div>
+                    <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl">Add to Cart</button>
+                </div>
+                <div class="flex flex-col items-center w-64 h-114 ">
+                    <img src="/img/tea.jpg" class="w-60 h-60 rounded-tl-[35%] rounded-br-[35%] shadow-lg">
+                    <h3 class="h3-style pt-5 pb-4 text-[#411D03]">Tea</h3>
+                    <p class="p-style text-[#411D03] pb-5">Size S │ Size L</p>
+                    <div class="flex flex-row gap-5 h3-style text-[#411D03] pb-5">
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>-</p>
+                        </button>
+                        <p>0</p>
+                        <button class="flex items-center justify-center border border-[#411D03] rounded-full w-8 h-8">
+                            <p>+</p>
+                        </button>
+                    </div>
+                    <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl">Add to Cart</button>
+                </div>
+            </div>
+            <button class="mt-11 mb-15 button-style bg-[#411D03] text-[#f3ece3] rounded-2xl w-38 h-9">See more ></button>
         </section>
     </main>
     <footer>
