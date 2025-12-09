@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Ratio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+			rel="stylesheet"
+			href="style.css"
+		/>
+
+    <style>
+        :root {
+            --cream-color: #f3ece3;
+            --matcha-color: #9e9957;
+            --brown-color: #411D03;
+            --gray-color: #989898;
+            --h1-font: "Playfair Display";
+            --h1-size: 48px;
+            --h1-weight: 600;
+            --h2-font: "Montserrat";
+            --h2-size: 32px;
+            --h2-weight: 600;
+            --h3-font: "Montserrat";
+            --h3-size: 22px;
+            --h3-weight: 600;
+            --button-font: "Montserrat";
+            --button-size: 14px;
+            --button-weight: 500;
+            --p-font: "Montserrat";
+            --p-size: 16px;
+            --p-weight: 400;
+            --nav-font: "Playfair Display";
+            --nav-size: 16px;
+            --nav-weight: 700;
+        }
+    </style>
+    <style type="text/tailwindcss">
+  @layer utilities {
+    .h1-style {
+      font-family: var(--h1-font);
+      font-size: var(--h1-size);
+      font-weight: var(--h1-weight);
+    }
+
+    .h2-style {
+      font-family: var(--h2-font);
+      font-size: var(--h2-size);
+      font-weight: var(--h2-weight);
+    }
+
+    .h3-style {
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-weight: var(--h3-weight);
+    }
+
+    .button-style {
+      font-family: var(--button-font);
+      font-size: var(--button-size);
+      font-weight: var(--button-weight);
+    }
+
+    .p-style {
+      font-family: var(--p-font);
+      font-size: var(--p-size);
+      font-weight: var(--p-weight);
+    }
+
+    .nav-style {
+      font-family: var(--nav-font);
+      font-size: var(--nav-size);
+      font-weight: var(--nav-weight);
+    }
+  }
+</style>
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <!--blending step 3 by game-->
+        <section>
+            <h2 class="h2-style text-[#411D03]">Step 3: Choose Your Ingredients</h2>
+            <div class="flex gap-7">
+                <div>Herbs</div>
+                <div>Spices</div>
+                <div>Fruits</div>
+            </div>
+            <p class="p-style text-[#989898]">** When it comes to herbs, less is more. Adding too much causes a tea to have a very unpleasant flavor</p>
+            <p class="p-style text-[#989898]">** For size S, you have only 4 blending options, M: 5 blending options, L: 6 blending options</p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
