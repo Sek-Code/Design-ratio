@@ -87,15 +87,193 @@
     <main>
         <!--blending step 3 by game-->
         <section>
-            <h2 class="h2-style text-[#411D03]">Step 3: Choose Your Ingredients</h2>
-            <div class="flex gap-7">
-                <div>Herbs</div>
-                <div>Spices</div>
-                <div>Fruits</div>
-            </div>
-            <p class="p-style text-[#989898]">** When it comes to herbs, less is more. Adding too much causes a tea to have a very unpleasant flavor</p>
+            <h2 class="h2-style text-[#411D03] pb-6">Step 3: Choose Your Ingredients</h2>
+            <form class="flex gap-7">
+              <div class="w-78  place-items-center bg-[#9e9957] rounded-3xl px-10 pb-7 ">
+                <h3 class="h3-style text-white pt-5 pb-6">Herbs</h3>
+                <div class=" w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Jasmine" name="Jasmine" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white" >Jasmine</span>
+                      </label>
+                      <span class="p-style text-white">+20</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Rose-Petals" name="Rose-Petals" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Rose Petals</span>
+                      </label>
+                      <span class="p-style text-white">+20</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Mint" name="Mint" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Mint</span>
+                      </label>
+                      <span class="p-style text-white">+10</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Charmomile" name="Charmomile" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Charmomile</span>
+                      </label>
+                      <span class="p-style text-white">+30</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Chrysanthemum" name="Chrysanthemum" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Chrysanthemum</span>
+                      </label>
+                      <span class="p-style text-white">+10</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Lavender" name="Lavender" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Lavender</span>
+                      </label>
+                      <span class="p-style text-white">+40</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-8">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Lemon-Grass" name="Lemon-Grass" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Lemon Grass</span>
+                      </label>
+                      <span class="p-style text-white">+20</span>
+                </div>
+                  
+              </div>
+              <div class="w-78  place-items-center bg-[#411D03] rounded-3xl px-10 pb-7 ">
+                <h3 class="h3-style text-white pt-5 pb-6">Spices</h3>
+                <div class=" w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Cinnamon" name="Cinnamon" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white" >Cinnamon</span>
+                      </label>
+                      <span class="p-style text-white">+30</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Cloves" name="Cloves" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Cloves</span>
+                      </label>
+                      <span class="p-style text-white">+20</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Cardamom" name="Cardamom" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Cardamom</span>
+                      </label>
+                      <span class="p-style text-white">310</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Ginger" name="Ginger" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Ginger</span>
+                      </label>
+                      <span class="p-style text-white">+10</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Star-Anise" name="Star-Anise" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Star Anise</span>
+                      </label>
+                      <span class="p-style text-white">+20</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Nutmeg" name="Nutmeg" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Nutmeg</span>
+                      </label>
+                      <span class="p-style text-white">+40</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-8">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Black-Pepper" name="Black-Pepper" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-white peer-checked:border-black border-4 peer-checked:bg-gray-500 border-white transition"></div>
+                        <span class="p-style text-white">Black Pepper</span>
+                      </label>
+                      <span class="p-style text-white">+20</span>
+                </div>
+                  
+              </div>
+              <div class="w-78  place-items-center bg-[#f3ece3] rounded-3xl px-10 pb-7 ">
+                <h3 class="h3-style text-[#411D03] pt-5 pb-6">Fruits</h3>
+                <div class=" w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Bergamot" name="Bergamot" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]" >Bergamot</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+30</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Apple" name="Apple" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]">Apple</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+10</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Peach" name="Peach" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]">Peach</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+30</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Lemon-Peel" name="Lemon-Peel" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]">Lemon Peel</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+20</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Orange-Peel" name="Orange-Peel" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]">Orange Peel</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+10</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-4">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Cranberry" name="Cranberry" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]">Cranberry</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+40</span>
+                </div>
+                <div class="w-full flex flex-row justify-between pb-8">
+                      <label class="flex items-center gap-4">
+                        <input type="checkbox" id="Raspberry" name="Raspberry" class="peer hidden">
+                        <div class="w-4 h-4 rounded-md bg-[#411D03] peer-checked:border-black border-4 peer-checked:bg-gray-500 border-[#411D03] transition"></div>
+                        <span class="p-style text-[#411D03]">Raspberry</span>
+                      </label>
+                      <span class="p-style text-[#411D03]">+40</span>
+                </div>
+                  
+              </div>
+            </form>
+            <p class="p-style text-[#989898] pt-9">** When it comes to herbs, less is more. Adding too much causes a tea to have a very unpleasant flavor</p>
             <p class="p-style text-[#989898]">** For size S, you have only 4 blending options, M: 5 blending options, L: 6 blending options</p>
         </section>
+        <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl mt-15">Add to Cart</button>
     </main>
     <footer></footer>
 </body>
