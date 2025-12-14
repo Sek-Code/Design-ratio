@@ -32,7 +32,62 @@
         </div>
     </nav>
   
-    <main>
+    <main class="mx-auto max-w-6xl px-4 md:px-8 pt-28 pb-16 flex-1">
+        <section class="mb-12">
+            <h1 class="text-[var(--brown-color)] mb-4">Blending</h1> 
+            <p class="p-style text-[var(--brown-color)] max-w-4xl mb-12">
+                Tea blending is the art of combining different teas, herbs, flowers, or spices to create a balanced and expressive flavor profile. It lets makers highlight the strengths of each ingredient while softening any harsh notes, resulting in a harmonious cup. Blending also encourages creativity, allowing you to design teas that match a mood, a season, or a personal preference—and why not start? Crafting your own blend lets you steep a tea that's truly personal—your mood, your story, your flavor.
+            </p>
+
+            <h2 class="text-[var(--brown-color)] pb-6">Step 1: Choose Your Tea Size</h2>
+            <div class="flex items-center space-x-8 mb-12">
+                <label class="flex items-center">
+                    <input type="radio" name="tea-size" value="S" checked class="hidden peer">
+                    <div class="w-5 h-5 rounded-full border-2 border-[var(--matcha-color)] mr-3 peer-checked:bg-[var(--matcha-color)] peer-checked:border-[var(--matcha-color)] transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <span class="p-style text-[var(--brown-color)]">Size S (approximately 50 g.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-size" value="M" class="hidden peer">
+                    <div class="w-5 h-5 rounded-full border-2 border-[var(--matcha-color)] mr-3 peer-checked:bg-[var(--matcha-color)] peer-checked:border-[var(--matcha-color)] transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <span class="p-style text-[var(--brown-color)]">Size M (approximately 70 g.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-size" value="L" class="hidden peer">
+                    <div class="w-5 h-5 rounded-full border-2 border-[var(--matcha-color)] mr-3 peer-checked:bg-[var(--matcha-color)] peer-checked:border-[var(--matcha-color)] transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <span class="p-style text-[var(--brown-color)]">Size L (approximately 100 g.)</span>
+                </label>
+            </div>
+
+            <h2 class="text-[var(--brown-color)] pb-6">Step 2: Choose Your Tea Base</h2>
+            <div class="flex items-center space-x-10 mb-12">
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Black" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Black Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Green" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Green Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Oolong" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Oolong Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Yellow" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Yellow Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="White" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">White Tea</span>
+                </label>
+            </div>
+        </section>
 
         <!--blending step 3 by game-->
         <section>
@@ -96,7 +151,6 @@
                       </label>
                       <span class="p-style text-white">+20</span>
                 </div>
-                  
               </div>
               <div class="w-78  place-items-center bg-[#411D03] rounded-3xl px-10 pb-7 ">
                 <h3 class="h3-style text-white pt-5 pb-6">Spices</h3>
@@ -156,7 +210,6 @@
                       </label>
                       <span class="p-style text-white">+20</span>
                 </div>
-                  
               </div>
               <div class="w-78  place-items-center bg-[#f3ece3] rounded-3xl px-10 pb-7 ">
                 <h3 class="h3-style text-[#411D03] pt-5 pb-6">Fruits</h3>
@@ -216,7 +269,6 @@
                       </label>
                       <span class="p-style text-[#411D03]">+40</span>
                 </div>
-                  
               </div>
             </form>
             <p class="p-style text-[#989898] pt-9">** When it comes to herbs, less is more. Adding too much causes a tea to have a very unpleasant flavor</p>
@@ -224,7 +276,7 @@
         </section>
         <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl mt-15">Add to Cart</button>
     </main>
-    
+
    <footer class="border-t bg-[var(--cream-color)] mt-auto w-full">
         <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
             <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10" />
