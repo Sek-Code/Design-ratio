@@ -2,122 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Ratio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Ratio</title>
 
-    <style>
-        :root {
-            --cream-color: #f3ece3;
-            --matcha-color: #9e9957;
-            --brown-color: #411D03;
-            --gray-color: #989898;
-            --h1-font: "Playfair Display";
-            --h1-size: 48px;
-            --h1-weight: 600;
-            --h2-font: "Montserrat";
-            --h2-size: 32px;
-            --h2-weight: 600;
-            --h3-font: "Montserrat";
-            --h3-size: 22px;
-            --h3-weight: 600;
-            --button-font: "Montserrat";
-            --button-size: 14px;
-            --button-weight: 500;
-            --p-font: "Montserrat";
-            --p-size: 16px;
-            --p-weight: 400;
-            --nav-font: "Playfair Display";
-            --nav-size: 16px;
-            --nav-weight: 700;
-        }
-    </style>
-    <style type="text/tailwindcss">
-        @layer utilities {
-    .h1-style {
-      font-family: var(--h1-font);
-      font-size: var(--h1-size);
-      font-weight: var(--h1-weight);
-    }
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./style.css" />
 
-    .h2-style {
-      font-family: var(--h2-font);
-      font-size: var(--h2-size);
-      font-weight: var(--h2-weight);
-    }
-
-    .h3-style {
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-weight: var(--h3-weight);
-    }
-
-    .button-style {
-      font-family: var(--button-font);
-      font-size: var(--button-size);
-      font-weight: var(--button-weight);
-    }
-
-    .p-style {
-      font-family: var(--p-font);
-      font-size: var(--p-size);
-      font-weight: var(--p-weight);
-    }
-
-    .nav-style {
-      font-family: var(--nav-font);
-      font-size: var(--nav-size);
-      font-weight: var(--nav-weight);
-    }
-  }
-</style>
-
+  <!-- flowbite (ใช้กับ carousel) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <nav class="w-full h-16 bg-yellow-600">
-            <ul class="flex justify-between items-center md:hidden">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="flex justify-between items-center h-full mx-8 md:flex">
-                <a href="">
-                    <img src="" alt="LOGO">
-                </a>
-                <ul class="flex gap-8 ">
-                    <a href="#">
-                        <li>HOME</li>
-                    </a>
-                    <a href="#">
-                        <li>Blending</li>
-                    </a>
-                    <a href="#">
-                        <li>Product</li>
-                    </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                    <a href="#">
-                        <li>Profile</li>
-                    </a>
-                    <a href="#">
-                        <li>OrderSummery</li>
-                    </a>
-                </ul>
+<body class="bg-white font-['Montserrat'] text-[var(--brown-color)] min-h-screen flex flex-col">
+      <header>
+    <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
+      <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
+        <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10 md:h-16" />
+
+        <div class="ml-auto flex items-center gap-6">
+          <a class="nav-style hover:text-[var(--matcha-color)]">Blending</a>
+          <a class="nav-style hover:text-[var(--matcha-color)]">Product</a>
+          <a class="nav-style hover:text-[var(--matcha-color)]">Contact</a>
+
+          <div class="flex items-center gap-3 text-[var(--matcha-color)]">
+            <span class="i-lucide-home size-5"></span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+
+            <div class="relative flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+              </svg>
+
+              <span class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full
+                           bg-[var(--brown-color)] text-[10px] text-white">
+                2
+              </span>
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
         <!-- img slider by ice -->
         <div class="max-w-full mx-auto">
@@ -319,46 +252,29 @@
                 ></button>
         </section>
     </main>
-    <footer>
-        <div class="w-full h-auto bg-[#F3ECE3] flex justify-around items-center">
-            <div>
-                <img src="" alt="LOGO">
-            </div>
-            <div>
-                <ul class="flex gap-8">
-                    <a href="#">
-                        <li>HOME</li>
-                    </a>
-                    <a href="#">
-                        <li>Blending</li>
-                    </a>
-                    <a href="#">
-                        <li>Product</li>
-                    </a>
-                    <a href="#">
-                        <li>Profile</li>
-                    </a>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <p>Contact Us</p>
-                </div>
-                <div>
-                    <p>Address</p>
-                    <p>Call</p>
-                </div>
-                <div>
-                    <ul>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <!---------------card pd--------------->
-                    </ul>
-                </div>
-            </div>
+     <footer class="border-t bg-[var(--cream-color)] mt-auto w-full">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
+      <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10" />
+
+      <div class="flex items-center gap-6 text-sm font-['Playfair_Display']">
+        <a class="hover:text-[var(--matcha-color)]">Home</a>
+        <a class="hover:text-[var(--matcha-color)]">Blending</a>
+        <a class="hover:text-[var(--matcha-color)]">Product</a>
+        <a class="hover:text-[var(--matcha-color)]">Contact</a>
+      </div>
+
+      <div class="text-center text-sm text-[var(--brown-color)] md:text-right">
+        <p>Contact Us</p>
+        <p>Address: 123 456 789</p>
+        <p>Call: (+66) 123456789</p>
+        <div class="mt-2 flex justify-center gap-2 md:justify-end">
+          <span class="i-mdi-facebook text-[var(--brown-color)]"></span>
+          <span class="i-mdi-instagram text-[var(--brown-color)]"></span>
+          <span class="i-mdi-pinterest text-[var(--brown-color)]"></span>
         </div>
-    </footer>
+      </div>
+    </div>
+</footer>
 </body>
 
 </html>
