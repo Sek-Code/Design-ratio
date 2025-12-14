@@ -11,38 +11,66 @@
 </head>
 
 <body class="bg-white font-['Montserrat'] text-[var(--brown-color)] min-h-screen flex flex-col">
-    <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
-        <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
-            <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10 md:h-16" />
-            <div class="ml-auto flex items-center gap-6">
-                <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Blending</a>
-                <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Product</a>
-                <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Contact</a>
-                <div class="flex items-center gap-3 text-[var(--matcha-color)]">
-                    <span class="i-lucide-home size-5"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="size-5">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                    </svg>
-                    <div class="relative flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="roun
-                            class="size-5">
-                            <circle cx="8" cy="21" r="1" />
-                            <circle cx="19" cy="21" r="1" />
-                            <path
-                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                        </svg>
-                        <span
-                            class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--brown-color)] text-[10px] text-white">0</span>
+     <!-- Navbar -->
+        <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
+            <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
+                <!-- LOGO to HOME -->
+                <a href="index.html">
+                    <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10 md:h-16" />
+                </a>
+
+                <!-- MENU -->
+                <div class="ml-auto flex items-center gap-6">
+                    <a href="custom_blend.html" class="nav-style hover:text-[var(--matcha-color)]">
+                        Blending
+                    </a>
+
+                    <a href="product.html" class="nav-style hover:text-[var(--matcha-color)]">
+                        Product
+                    </a>
+
+                    <a href="contactUs.html" class="nav-style hover:text-[var(--matcha-color)]">
+                        Contact
+                    </a>
+
+                    <!-- ICONS -->
+                    <div class="flex items-center gap-3 text-[var(--matcha-color)]">
+                        <!-- Home -->
+                        <a href="index.html" title="Home">
+                            <span class="i-lucide-home size-5"></span>
+                        </a>
+
+                        <!-- Profile -->
+                        <a href="profile_setting.html" title="Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="size-5">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </a>
+
+                        <!-- Cart -->
+                        <a href="checkout.html" class="relative flex items-center" title="Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="size-5">
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                            </svg>
+
+                            <!-- badge -->
+                            <span
+                                class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--brown-color)] text-[10px] text-white">
+                                2
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
     <main class="mx-auto w-full lg:max-w-[980px] px-4 md:px-8 pt-28 pb-16 flex-1">
         <h1 class="font-['Playfair_Display'] text-3xl mb-12">Sign up</h1>
 
