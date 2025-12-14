@@ -4,87 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Ratio</title>
+    <title>Design Ratio - Blending</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link
-			rel="stylesheet"
-			href="style.css"
-		/>
-
-    <style>
-        :root {
-            --cream-color: #f3ece3;
-            --matcha-color: #9e9957;
-            --brown-color: #411D03;
-            --gray-color: #989898;
-            --h1-font: "Playfair Display";
-            --h1-size: 48px;
-            --h1-weight: 600;
-            --h2-font: "Montserrat";
-            --h2-size: 32px;
-            --h2-weight: 600;
-            --h3-font: "Montserrat";
-            --h3-size: 22px;
-            --h3-weight: 600;
-            --button-font: "Montserrat";
-            --button-size: 14px;
-            --button-weight: 500;
-            --p-font: "Montserrat";
-            --p-size: 16px;
-            --p-weight: 400;
-            --nav-font: "Playfair Display";
-            --nav-size: 16px;
-            --nav-weight: 700;
-        }
-    </style>
-    <style type="text/tailwindcss">
-  @layer utilities {
-    .h1-style {
-      font-family: var(--h1-font);
-      font-size: var(--h1-size);
-      font-weight: var(--h1-weight);
-    }
-
-    .h2-style {
-      font-family: var(--h2-font);
-      font-size: var(--h2-size);
-      font-weight: var(--h2-weight);
-    }
-
-    .h3-style {
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-weight: var(--h3-weight);
-    }
-
-    .button-style {
-      font-family: var(--button-font);
-      font-size: var(--button-size);
-      font-weight: var(--button-weight);
-    }
-
-    .p-style {
-      font-family: var(--p-font);
-      font-size: var(--p-size);
-      font-weight: var(--p-weight);
-    }
-
-    .nav-style {
-      font-family: var(--nav-font);
-      font-size: var(--nav-size);
-      font-weight: var(--nav-weight);
-    }
-  }
-</style>
+    <link rel="stylesheet" href="./style.css" />
 
 </head>
 <body>
-    <header></header>
-    <main>
+  <body class="bg-white font-['Montserrat'] text-[var(--brown-color)] min-h-screen flex flex-col">
+    <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
+        <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
+            <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10 md:h-16" />
+            <div class="ml-auto flex items-center gap-6">
+                <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Blending</a>
+                <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Product</a>
+                <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Contact</a>
+                <div class="flex items-center gap-3 text-[var(--matcha-color)]">
+                    <span class="i-lucide-home size-5"></span>
+                    <span class="i-lucide-user size-5"></span>
+                    <div class="relative flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+                            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                        </svg>
+                        <span class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--brown-color)] text-[10px] text-white">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
+    <main class="mx-auto max-w-6xl px-4 md:px-8 pt-28 pb-16 flex-1">
+        <section class="mb-12">
+            <h1 class="text-[var(--brown-color)] mb-4">Blending</h1> 
+            <p class="p-style text-[var(--brown-color)] max-w-4xl mb-12">
+                Tea blending is the art of combining different teas, herbs, flowers, or spices to create a balanced and expressive flavor profile. It lets makers highlight the strengths of each ingredient while softening any harsh notes, resulting in a harmonious cup. Blending also encourages creativity, allowing you to design teas that match a mood, a season, or a personal preference—and why not start? Crafting your own blend lets you steep a tea that's truly personal—your mood, your story, your flavor.
+            </p>
+
+            <h2 class="text-[var(--brown-color)] pb-6">Step 1: Choose Your Tea Size</h2>
+            <div class="flex items-center space-x-8 mb-12">
+                <label class="flex items-center">
+                    <input type="radio" name="tea-size" value="S" checked class="hidden peer">
+                    <div class="w-5 h-5 rounded-full border-2 border-[var(--matcha-color)] mr-3 peer-checked:bg-[var(--matcha-color)] peer-checked:border-[var(--matcha-color)] transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <span class="p-style text-[var(--brown-color)]">Size S (approximately 50 g.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-size" value="M" class="hidden peer">
+                    <div class="w-5 h-5 rounded-full border-2 border-[var(--matcha-color)] mr-3 peer-checked:bg-[var(--matcha-color)] peer-checked:border-[var(--matcha-color)] transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <span class="p-style text-[var(--brown-color)]">Size M (approximately 70 g.)</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-size" value="L" class="hidden peer">
+                    <div class="w-5 h-5 rounded-full border-2 border-[var(--matcha-color)] mr-3 peer-checked:bg-[var(--matcha-color)] peer-checked:border-[var(--matcha-color)] transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <span class="p-style text-[var(--brown-color)]">Size L (approximately 100 g.)</span>
+                </label>
+            </div>
+
+            <h2 class="text-[var(--brown-color)] pb-6">Step 2: Choose Your Tea Base</h2>
+            <div class="flex items-center space-x-10 mb-12">
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Black" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Black Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Green" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Green Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Oolong" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Oolong Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="Yellow" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">Yellow Tea</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tea-base" value="White" class="w-4 h-4 text-[var(--matcha-color)] border-gray-300 focus:ring-[var(--matcha-color)] mr-3">
+                    <span class="p-style text-[var(--brown-color)]">White Tea</span>
+                </label>
+            </div>
+        </section>
+
         <!--blending step 3 by game-->
         <section>
             <h2 class="h2-style text-[#411D03] pb-6">Step 3: Choose Your Ingredients</h2>
@@ -147,7 +151,6 @@
                       </label>
                       <span class="p-style text-white">+20</span>
                 </div>
-                  
               </div>
               <div class="w-78  place-items-center bg-[#411D03] rounded-3xl px-10 pb-7 ">
                 <h3 class="h3-style text-white pt-5 pb-6">Spices</h3>
@@ -207,7 +210,6 @@
                       </label>
                       <span class="p-style text-white">+20</span>
                 </div>
-                  
               </div>
               <div class="w-78  place-items-center bg-[#f3ece3] rounded-3xl px-10 pb-7 ">
                 <h3 class="h3-style text-[#411D03] pt-5 pb-6">Fruits</h3>
@@ -267,14 +269,34 @@
                       </label>
                       <span class="p-style text-[#411D03]">+40</span>
                 </div>
-                  
               </div>
             </form>
             <p class="p-style text-[#989898] pt-9">** When it comes to herbs, less is more. Adding too much causes a tea to have a very unpleasant flavor</p>
             <p class="p-style text-[#989898]">** For size S, you have only 4 blending options, M: 5 blending options, L: 6 blending options</p>
         </section>
-        <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl mt-15">Add to Cart</button>
+      <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl mt-15 mx-auto block">Add to Cart</button>
     </main>
-    <footer></footer>
+
+   <footer class="border-t bg-[var(--cream-color)] mt-auto w-full">
+        <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
+            <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10" />
+            <div class="flex items-center gap-6 text-sm font-['Playfair_Display']">
+                <a class="hover:text-[var(--matcha-color)]">Home</a>
+                <a class="hover:text-[var(--matcha-color)]">Blending</a>
+                <a class="hover:text-[var(--matcha-color)]">Product</a>
+                <a class="hover:text-[var(--matcha-color)]">Contact</a>
+            </div>
+            <div class="text-center text-sm text-[var(--brown-color)] md:text-right">
+                <p>Contact Us</p>
+                <p>Address: 123 456 789</p>
+                <p>Call: (+66) 123456789</p>
+                <div class="mt-2 flex justify-center gap-2 md:justify-end">
+                    <span class="i-mdi-facebook text-[var(--brown-color)]"></span>
+                    <span class="i-mdi-instagram text-[var(--brown-color)]"></span>
+                    <span class="i-mdi-pinterest text-[var(--brown-color)]"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
