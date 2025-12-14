@@ -71,4 +71,10 @@ h2 {
         font-size: var(--p-size);
         font-weight: var(--p-weight);
     }
+
+    .nav-style {
+        font-family: var(--nav-font);
+        font-size: var(--nav-size);
+        font-weight: var(--nav-weight);
+    }
 }
