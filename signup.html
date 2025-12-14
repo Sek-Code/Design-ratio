@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Ratio - Sign Up</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="bg-white font-['Montserrat'] text-[var(--brown-color)] min-h-screen flex flex-col">
-    
     <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
         <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
             <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10 md:h-16" />
@@ -21,72 +20,91 @@
                 <a class="font-['Playfair_Display'] text-sm font-bold hover:text-[var(--matcha-color)]">Contact</a>
                 <div class="flex items-center gap-3 text-[var(--matcha-color)]">
                     <span class="i-lucide-home size-5"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="size-5">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
                     </svg>
                     <div class="relative flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
-                            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="roun
+                            class="size-5">
+                            <circle cx="8" cy="21" r="1" />
+                            <circle cx="19" cy="21" r="1" />
+                            <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
                         </svg>
-                        <span class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--brown-color)] text-[10px] text-white">0</span> 
+                        <span
+                            class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--brown-color)] text-[10px] text-white">0</span>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="mx-auto **w-full lg:max-w-[980px]** px-4 md:px-8 pt-28 pb-16 flex-1">
-        
-        <h1 class="text-[var(--brown-color)] mb-10">Sign up</h1> 
+    <main class="mx-auto w-full lg:max-w-[980px] px-4 md:px-8 pt-28 pb-16 flex-1">
+        <h1 class="font-['Playfair_Display'] text-3xl mb-12">Sign up</h1>
 
-        <form class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-            
+        <form class="w-full grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+            <!-- Name -->
             <div>
-                <label for="name" class="p-style font-medium block mb-2">Name :</label>
-                <input type="text" id="name" class="w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-1" required>
-            </div>
-            
-            <div>
-                <label for="surname" class="p-style font-medium block mb-2">Surname :</label>
-                <input type="text" id="surname" class="w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-1" required>
-            </div>
-            
-            <div class="col-span-1 md:col-span-2">
-                <label for="email" class="p-style font-medium block mb-2">E-mail :</label>
-                <input type="email" id="email" class="w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-1" required>
-            </div>
-            
-            <div>
-                <label for="password" class="p-style font-medium block mb-2">Password :</label>
-                <input type="password" id="password" class="w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-1" required>
-            </div>
-            
-            <div>
-                <label for="password_confirm" class="p-style font-medium block mb-2">Password Confirm :</label>
-                <input type="password" id="password_confirm" class="w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-1" required>
+                <label class="block mb-2 font-medium">Name :</label>
+                <input type="text"
+                    class="block w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-2" />
             </div>
 
-            <div class="col-span-1 md:col-span-2">
-                <label for="address" class="p-style font-medium block mb-2">Address :</label>
-                <input type="text" id="address" class="w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-1" required>
+            <!-- Surname -->
+            <div>
+                <label class="block mb-2 font-medium">Surname :</label>
+                <input type="text"
+                    class="block w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-2" />
             </div>
-            
+
+            <!-- Email -->
+            <div class="md:col-span-2">
+                <label class="block mb-2 font-medium">E-mail :</label>
+                <input type="email"
+                    class="block w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-2" />
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label class="block mb-2 font-medium">Password :</label>
+                <input type="password"
+                    class="block w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-2" />
+            </div>
+
+            <!-- Password Confirm -->
+            <div>
+                <label class="block mb-2 font-medium">Password Confirm :</label>
+                <input type="password"
+                    class="block w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-2" />
+            </div>
+
+            <!-- Address -->
+            <div class="md:col-span-2">
+                <label class="block mb-2 font-medium">Address :</label>
+                <input type="text"
+                    class="block w-full bg-transparent border-b border-[var(--brown-color)] focus:outline-none focus:border-[var(--matcha-color)] py-2" />
+            </div>
         </form>
 
-        <div class="flex gap-4 mt-10">
-            <button class="bg-[var(--brown-color)] text-white w-28 py-2 rounded-xl text-center font-medium shadow-md">
+        <!-- BUTTONS -->
+        <div class="mt-14 flex justify-center gap-4">
+            <button class="w-28 py-2 rounded-xl bg-[var(--brown-color)] text-white font-medium shadow-md">
                 Login
             </button>
-            
-            <button class="bg-gray-400 text-white w-28 py-2 rounded-xl text-center font-medium shadow-md hover:bg-gray-500">
+
+            <button class="w-28 py-2 rounded-xl bg-gray-400 hover:bg-gray-500 text-white font-medium shadow-md">
                 Sign Up
             </button>
         </div>
-
     </main>
-    
+
     <footer class="border-t bg-[var(--cream-color)] mt-auto w-full">
-        <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
+        <div
+            class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
             <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10" />
             <div class="flex items-center gap-6 text-sm font-['Playfair_Display']">
                 <a class="hover:text-[var(--matcha-color)]">Home</a>
