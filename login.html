@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Ratio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        @theme {
+            --cream-color: #f3ece3;
+            --matcha-color: #9e9957;
+            --brown-color: #411D03;
+            --gray-color: #989898;
+            --h1-font: "Playfair Display";
+            --h1-size: 48px;
+            --h1-weight: 600;
+            --h2-font: "Montserrat";
+            --h2-size: 32px;
+            --h2-weight: 600;
+            --h3-font: "Montserrat";
+            --h3-size: 22px;
+            --h3-weight: 600;
+            --button-font: "Montserrat";
+            --button-size: 14px;
+            --button-weight: 500;
+            --p-font: "Montserrat";
+            --p-size: 16px;
+            --p-weight: 400;
+            --nav-font: "Playfair Display";
+            --nav-size: 16px;
+            --nav-weight: 700;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .h1-style {
+            font-family: var(--h1-font);
+            font-size: var(--h1-size);
+            font-weight: var(--h1-weight);
+            }
+
+            .h2-style {
+            font-family: var(--h2-font);
+            font-size: var(--h2-size);
+            font-weight: var(--h2-weight);
+            }
+
+            .h3-style {
+            font-family: var(--h3-font);
+            font-size: var(--h3-size);
+            font-weight: var(--h3-weight);
+            }
+
+            .button-style {
+            font-family: var(--button-font);
+            font-size: var(--button-size);
+            font-weight: var(--button-weight);
+            }
+
+            .p-style {
+            font-family: var(--p-font);
+            font-size: var(--p-size);
+            font-weight: var(--p-weight);
+            }
+
+            .nav-style {
+            font-family: var(--nav-font);
+            font-size: var(--nav-size);
+            font-weight: var(--nav-weight);
+            }
+
+            .placeholder-h3-style {
+            font-family: var(--h3-font);
+            font-size: var(--h3-size);
+            font-weight: var(--h3-weight);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mx-40 bg-white flex justify-start items-center h-25">
+         <!-- Navbar -->
+        <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
+            <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
+                <!-- LOGO to HOME -->
+                <a href="index.html">
+                    <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10 md:h-16" />
+                </a>
+
+                <!-- MENU -->
+                <div class="ml-auto flex items-center gap-6">
+                    <a href="custom_blend.html" class="nav-style hover:text-[var(--matcha-color)]">
+                        Blending
+                    </a>
+
+                    <a href="product.html" class="nav-style hover:text-[var(--matcha-color)]">
+                        Product
+                    </a>
+
+                    <a href="contactUs.html" class="nav-style hover:text-[var(--matcha-color)]">
+                        Contact
+                    </a>
+
+                    <!-- ICONS -->
+                    <div class="flex items-center gap-3 text-[var(--matcha-color)]">
+                        <!-- Home -->
+                        <a href="index.html" title="Home">
+                            <span class="i-lucide-home size-5"></span>
+                        </a>
+
+                        <!-- Profile -->
+                        <a href="profile_setting.html" title="Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="size-5">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </a>
+
+                        <!-- Cart -->
+                        <a href="checkout.html" class="relative flex items-center" title="Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="size-5">
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                            </svg>
+
+                            <!-- badge -->
+                            <span
+                                class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--brown-color)] text-[10px] text-white">
+                                2
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="max-w-xl mx-auto my-25 ">
+            <form action="#" class="gap-4 ">
+                <p class="text-6xl my-7 text-center h1-style">Log-in</p>
+                <div>
+                    <div class="flex flex-col gap-2 text-lg">
+                        <label class="text-gray-600 font-bold inline-block pb-2 h3-style" for="e-mail">E-mail</label>
+                        <input
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2 placeholder-h3-style"
+                            type="email" name="email" placeholder="Exmaple@gmail.com" required>
+                    </div>
+                    <div class="flex flex-col text-lg my-4">
+                        <label class="text-gray-600 font-bold inline-block pb-2 h3-style"
+                            for="password">Password</label>
+                        <input
+                            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+                            type="password" name="password" required>
+                    </div>
+                    <div class="flex my-6 ">
+                        <div class=" w-1/2">
+                            <input type="checkbox" name="remeberme" id="remeberme ">
+                            <label for="reberMe">Remember me</label>
+                        </div>
+                        <div class="w-1/2 text-right ">
+                            <a href="">Forgot password</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <input
+                            class="my-4 bg-[#989898] w-32 py-2 rounded-3xl text-white font-bold cursor-pointer hover:bg-yellow-950"
+                            type="submit" value="Login">
+                        <input
+                            class="my-4 bg-[#411D03] w-32 py-2 rounded-3xl text-white font-bold cursor-pointer hover:bg-yellow-950"
+                            type="submit" value="Sign Up">
+                    </div>
+                    <button
+                        class="bg-white w-full py-2 rounded-md text-[#411D03] font-bold flex items-center justify-center gap-3 border border-[#411D03] my-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg"
+                            class="w-4 h-4" />
+                        Log In with Google
+                    </button>
+                    <button
+                        class="bg-[#411D03] w-full py-2 rounded-md text-white font-bold flex items-center justify-center gap-3 my-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                            class="w-4 h-4" />
+                        Log In with Facebook
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="border-t bg-[var(--cream-color)] mt-auto w-full">
+        <div
+            class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
+            <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10" />
+
+            <div class="flex items-center gap-6 text-sm font-['Playfair_Display']">
+                <a class="hover:text-[var(--matcha-color)]">Home</a>
+                <a class="hover:text-[var(--matcha-color)]">Blending</a>
+                <a class="hover:text-[var(--matcha-color)]">Product</a>
+                <a class="hover:text-[var(--matcha-color)]">Contact</a>
+            </div>
+
+            <div class="text-center text-sm text-[var(--brown-color)] md:text-right">
+                <p>Contact Us</p>
+                <p>Address: 123 456 789</p>
+                <p>Call: (+66) 123456789</p>
+                <div class="mt-2 flex justify-center gap-2 md:justify-end">
+                    <span class="i-mdi-facebook text-[var(--brown-color)]"></span>
+                    <span class="i-mdi-instagram text-[var(--brown-color)]"></span>
+                    <span class="i-mdi-pinterest text-[var(--brown-color)]"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
