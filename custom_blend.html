@@ -73,6 +73,7 @@
 
   <body class="bg-white font-['Montserrat'] text-[var(--brown-color)] min-h-screen flex flex-col">
  <!-- Navbar -->
+    <header>
         <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
             <div class="mx-auto flex max-w-6xl items-center px-4 py-4 md:px-8">
                 <!-- LOGO to HOME -->
@@ -135,6 +136,7 @@
                 </div>
             </div>
         </nav>
+      </header>
 
     <main class="mx-auto max-w-6xl px-4 md:px-8 pt-28 pb-16 flex-1">
       <section class="mb-12">
@@ -437,28 +439,41 @@
       <button class="button-style bg-[#411D03] text-[#f3ece3] w-35 h-8 rounded-2xl mt-15 mx-auto block">Add to
         Cart</button>
     </main>
-
-    <footer class="border-t bg-[var(--cream-color)] mt-auto w-full">
-      <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:px-8">
-        <img src="img/Design-Ratio-logo.png" alt="Design Ratio" class="h-10" />
-        <div class="flex items-center gap-6 text-sm font-['Playfair_Display']">
-          <a class="hover:text-[var(--matcha-color)]">Home</a>
-          <a class="hover:text-[var(--matcha-color)]">Blending</a>
-          <a class="hover:text-[var(--matcha-color)]">Product</a>
-          <a class="hover:text-[var(--matcha-color)]">Contact</a>
+    <footer class="bg-[#f6efe6] px-1 py-3 ">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-9">
+        <div class="flex items-center">
+          <img src="/img/Design-Ratio-logo.png" alt="LOGO" class="h-25">
         </div>
-        <div class="text-center text-sm text-[var(--brown-color)] md:text-right">
-          <p>Contact Us</p>
-          <p>Address: 123 456 789</p>
-          <p>Call: (+66) 123456789</p>
-          <div class="mt-2 flex justify-center gap-2 md:justify-end">
-            <span class="i-mdi-facebook text-[var(--brown-color)]"></span>
-            <span class="i-mdi-instagram text-[var(--brown-color)]"></span>
-            <span class="i-mdi-pinterest text-[var(--brown-color)]"></span>
-          </div>
+        <!-- Navbar with Footer -->
+        <div>
+          <ul class="nav-style flex items-center justify-between gap-20 h-35 text-amber-950">
+            <a href="index.html" class="hover:text-[var(--matcha-color)]">
+              <li>Home</li>
+            </a>
+            <a href="custom_blend.html" class="hover:text-[var(--matcha-color)]">
+              <li>Blending</li>
+            </a>
+            <a href="product.html" class="hover:text-[var(--matcha-color)]">
+              <li>Product</li>
+            </a>
+            <a href="contactUs.html" class="hover:text-[var(--matcha-color)]">
+              <li>Contact</li>
+            </a>
+          </ul>
         </div>
+        <!-- Contact -->
+      <div class="flex flex-col items-end md:text-right ">
+          <h3 class="nav-style h-6 rounded-full flex items-center justify-end text-amber-950">Contact Us</h3>
+          <p class="flex justify-end">Address: 123 456 789</p>
+          <p class="flex justify-end">Call: (+66) 123456789</p>
+        <!-- linkContact -->
+      <div class="flex mt-2 h-10 w-17 mx-25 ">
+          <img src="/img/18.png" alt="fb"></img>
+          <img src="/img/19.png" alt="ig"></img>
+          <img src="/img/20.png" alt="x"></img>
       </div>
+      </div>
+    </div>
     </footer>
   </body>
-
 </html>
